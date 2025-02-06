@@ -22,6 +22,10 @@
         socket.on('mensaje', function(payload){
             console.log("mensaje paylod",payload);
         });
+
+        socket.on('active-bands', function(bands){
+            console.table(bands);
+        })
     </script>
 </body>
 </html>
